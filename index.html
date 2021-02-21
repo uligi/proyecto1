@@ -1,12 +1,66 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../lab4/css/estilos.css">
+    <script src="../lab4/js/script.js" defer></script>
+</head>
+<body>
+    <!--cuerpo-->
+    <div class="manita">
+        <div class="calculator-grid">
+            <div class="nenu">
+                <!--menu de arriba-->
+                <select name="menu">
+                    <option value="view">View</option>
+                    <option value="bigger">bigger</option>
+                    <option value="small">smaller</option>
+                </select>    
+                <select name="menu2">
+                    <option value="edit">Edit</option>
+                </select>
+                <select name="menu3">
+                    <option value="help">Help</option>
+                </select>            
+            </div>
+            <!--pantalla-->
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <!--primera fila de botones-->
+            <button data-back>←</button>
+            <button data-all-clear class="delete">CE</button>
+            <button data-delete class="delete">C</button>
+            <button data-operation>±</button>
+            <button data-operation>√</button>
+            <!--Segunda fila de botones-->
+            <button data-number class="number">7</button>
+            <button data-number class="number">8</button>
+            <button data-number class="number">9</button>
+            <button data-operation>/</button>
+            <button data-operation>%</button>
+            <!--tercera fila de botones-->
+            <button data-number class="number">4</button>
+            <button data-number class="number">5</button>
+            <button data-number class="number">6</button>
+            <button data-operation>*</button>
+            <button data-operation>1/x</button>
+            <!--cuarta fila de botones-->
+            <button data-number class="number">1</button>
+            <button data-number class="number">2</button>
+            <button data-number class="number">3</button>
+            <button data-operation>-</button>
+            <button class="columnspan-two" data-equals>=</button>
+            <!--quinta fila de botones-->
+            <button class="rowspan-two" data-number>0</button>
+            <button data-number class="number">.</button>
+            <button data-operation>+</button>
 
-<html>
-    <head>
-        <title>Hola</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <h1> Hola Mundo</h1>
-        <div></div>
-    </body>
+        </div>
+    </div>
+</body>
+</html>
